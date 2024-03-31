@@ -1,6 +1,6 @@
 # PB&J Time Sandwitch Builder React App
 
-### Link to deployed app: https://pbj-time.vercel.app/
+### Link to deployed app: https://sandwitch-builder.vercel.app/
 
 ### Objective
 The objective of this project was to gain experience building web apps in React from scratch. I created a sandwitch builder app that lets you add ingrediants and make your own sandwitch. The app comes with sort and filter features to filter though items (nut butters, jams, toppings, savory, sweet). 
