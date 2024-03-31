@@ -60,6 +60,17 @@ img {
     margin: 0.5rem;
   }
 
+  .sort-info {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    padding-bottom: 0.25rem;
+  }
+
+  .sort-info p {
+    font-size: 1.05rem;
+  }
+  
   .bottom-nav p {
     width: fit-content;
     font-weight: bold;

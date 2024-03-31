@@ -79,6 +79,10 @@ export default function SandwitchItem(props) {
   return (
     <div class="item">
         {/* Sandwitch Item Card */}
+        <div class="sort-info">
+          <p>{category}</p>
+          <p>{flavor}</p>
+        </div>
       <div class="img-wrapper">
         <img src={image} alt={name + "Image"} />
       </div>
