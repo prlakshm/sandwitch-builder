@@ -19,9 +19,12 @@ function App() {
   const [selectedFilter, setSelectedFilter] = useState("Reset Filter");
   const [sortedData, setSortedData] = useState(sandwitchData);
 
-  const categories = Array.from(
-    new Set(sandwitchData.map((item) => item.category))
-  ); // Extract unique categories
+  const categories = sandwitchData.map((item) => item.category);
+  const flavors = sandwitchData.map((item) => item.flavor);
+
+  const categoriesAndFlavors = Array.from(
+    new Set(categories.concat(flavors))
+  ); // Extract unique categories and flavors
 
   const sortItemsByCategory = (category) => {
     // Set selected sort
@@ -32,7 +35,7 @@ function App() {
     if (category === "Reset Sort") {
       sorted = [...sandwitchData];
     } else {
-      sorted = sandwitchData.filter((item) => item.category === category);
+      sorted = sandwitchData.filter((item) => item.category === category || item.flavor === category);
     }
 
     setSortedData(sorted)
@@ -131,7 +134,7 @@ function App() {
               }}
             >
               <option value="Reset Sort">Reset Sort</option>
-              {categories.map((category, index) => (
+              {categoriesAndFlavors.map((category, index) => (
                 <option key={index} value={category}>
                   {category}
                 </option>
@@ -165,6 +168,7 @@ function App() {
                   price={item.price}
                   image={item.image}
                   category={item.category}
+                  flavor={item.flavor}
                   photo={item.photo}
                   cart={cart}
                   setCart={setCart}

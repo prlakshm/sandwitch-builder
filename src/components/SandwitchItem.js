@@ -1,7 +1,7 @@
 import "../styles/SandwitchItem.css";
 
 export default function SandwitchItem(props) {
-  const { name, price, image, category, photo, cart, setCart } = props;
+  const { name, price, image, category, photo, flavor, cart, setCart } = props;
 
   const addToCart = () => {
     // Check if the item already exists in the cart based on its category
@@ -34,14 +34,14 @@ export default function SandwitchItem(props) {
             // If not same topping, add seperatly
           setCart((prevCart) => [
             ...prevCart,
-            { name, price, quantity: 1, category, photo },
+            { name, price, quantity: 1, category, flavor, photo },
           ]);
         }
       } else {
         // If there's only one or no topping, add the new topping to the cart
         setCart((prevCart) => [
           ...prevCart,
-          { name, price, quantity: 1, category, photo },
+          { name, price, quantity: 1, category, flavor, photo },
         ]);
       }
     } else {
@@ -49,7 +49,7 @@ export default function SandwitchItem(props) {
       if (existingItemIndex !== -1) {
         // If the item exists of the same category, replace it in the cart
         const updatedCart = [...cart];
-        updatedCart[existingItemIndex] = { name, price, quantity: 1, category, photo };
+        updatedCart[existingItemIndex] = { name, price, quantity: 1, category, flavor, photo };
         setCart(updatedCart);
       } else {
         // If the item doesn't exist, find the index to insert based on the category order
@@ -69,7 +69,7 @@ export default function SandwitchItem(props) {
   
         // Insert the new item at the determined index
         const updatedCart = [...cart];
-        updatedCart.splice(insertIndex, 0, { name, price, quantity: 1, category, photo });
+        updatedCart.splice(insertIndex, 0, { name, price, quantity: 1, category, flavor, photo });
         setCart(updatedCart);
       }
     }
