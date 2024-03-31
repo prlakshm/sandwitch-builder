@@ -1,0 +1,303 @@
+/* Add styling for your page here */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Gluten:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+@font-face {
+    font-family: "pencilPete";
+    src: url("../fonts/pencilPete.ttf");
+}
+
+@font-face {
+    font-family: "KGThousandReasons";
+    src: url("../fonts/KGTenThousandReasons.ttf");
+}
+
+
+body {
+    background-color: #fedede;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+/* Left styling */
+.left {
+    padding: 0.45rem 4rem 0.45rem 2rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+h1 {
+    font-family: "DynaPuff";
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fc8364;
+    padding-left: 0.75rem;
+    margin: 1rem;
+    text-shadow: 3px 4px 6px rgb(255, 255, 255), 0 0 0 #000;
+    cursor: pointer;
+}
+
+.sandwitch-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f9ecec;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 0.5rem solid #ffbeae;
+    height: 67.65vh; /* Set the desired height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+/* Styles for the scrollbar track */
+.sandwitch-items::-webkit-scrollbar {
+    background-color: rgb(255, 250, 243); /* Change the background color */
+    border-radius: 1rem;
+    scrollbar-width: auto;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  /* Styles for the scrollbar handle */
+  .sandwitch-items::-webkit-scrollbar-thumb {
+    background-color: #ffd5ca; /* Change the color of the scrollbar handle */
+    border-radius: 1rem;
+    cursor: pointer; 
+  }
+
+  .sandwitch-items::-webkit-scrollbar-thumb:hover {
+    background-color: #ff977d; /* Change the color of the scrollbar handle */
+  }
+  
+
+.sort-dropdowns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort-dropdowns select {
+    margin: 0 1rem 0.9rem 1rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding: 0rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #f9ecec;
+    border: 4px solid  #ffbeae;
+    font-size: 1.15rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sort-dropdowns option {
+    background-color: #f9ecec;
+}
+
+
+/* Right Styling */
+.right {
+    padding: 1.9rem 0rem 0.6rem 0rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.cart-container {
+    height: 10.5rem;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    width: 21.5rem;
+    border-radius: 1rem;
+    background-color: #f9ecec;
+    border: 4px solid  #ffbeae;
+    padding: 0.5rem 1rem;
+}
+
+.cart-item, .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart-item p {
+    text-align: left;
+    width: inherit;
+    line-height: 0.75rem;
+    font-size: 1.05rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+}
+
+.trash {
+    display: flex;
+    flex-direction: row;
+    margin-right: -0.25rem; 
+}
+
+.clicker {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 100;
+    height: fit-content;
+    line-height: 1.6rem;
+}
+
+.trash img {
+    width: 1.05rem;
+    height: 1.1rem;
+    border-radius: 0;
+}
+
+.trash button {
+    margin-left: 0.5rem;
+    margin-top: -0.25rem;
+    height: 1.55rem;
+    width: 1.5rem;
+    cursor: pointer;
+    padding: 0.1rem 0 0.07rem 0;
+}
+
+
+.total p {
+    text-align: left;
+    font-weight: bold;
+    width: inherit;
+    line-height: 1.1rem;
+    font-size: 1.05rem;
+    margin-bottom: 0rem;
+}
+
+
+.message p {
+    text-align: left;
+}
+
+.instructions h2 {
+    font-family: "pencilPete";
+    color:#fc8364;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.instructions {
+    padding-left: 0.3rem;
+}
+
+.instructions ul {
+    list-style-type: none;
+    margin-left: -1.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.93rem;
+}
+
+.instructions li {
+    font-family: "pencilPete";
+    color:#fc8364;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.numering {
+    font-family: "KGThousandReasons";
+    font-size: 1.25rem;
+}
+
+.build {
+    position: relative;
+    padding: 0.5rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    width: 21.5rem;
+}
+
+.build .img-container {
+    border: 6px solid #ade1d5;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1);
+    border-radius: 2rem;
+}
+
+.build img {
+    width: 18.5rem;
+    z-index: 0; /* Ensure it's behind the added photos */
+    border-radius: 2rem;
+}
+
+.added-photo {
+    position: absolute;
+    left: 11%; /* Adjust as needed */
+    z-index: 1; /* Ensure it's on top of the base image */
+    transition: opacity 0.5s, transform 0.5s;
+    animation: fallInAnimation 0.5s ease-out;
+  }
+
+
+
+@keyframes fallInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+    body {
+        flex-direction: column;
+    }
+    .right {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 65rem;
+        padding-left: 3rem;
+    }
+    .right .top {
+        padding-right: 2rem;
+    }
+    .right .bottom {
+        padding-left: 2rem;
+    }
+}  
+
+
+@media only screen and (max-width: 500px) {
+    .left {
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .menu {
+        width: fit-content;
+        padding-left: 2rem;
+    }
+    
+    .sandwitch-items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .right {
+        width: 40rem;
+        flex-direction: column;
+    }
+    .right .bottom {
+        padding-left: 0rem;
+        margin-left: -2rem;
+    }
+}  
+   
