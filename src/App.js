@@ -254,9 +254,6 @@ function App() {
                 ))}
               </div>
             </div>
-            <div className="submit">
-              <button>Build!</button>
-            </div>
           </div>
         </div>
       </body>
