@@ -5,10 +5,13 @@
 ### Objective
 The objective of this project was to gain experience building web apps in React from scratch. I created a sandwitch builder app that lets you add ingrediants and make your own sandwitch. The app comes with sort and filter features to filter though items (nut butters, jams, toppings, savory, sweet). 
 
+*All images were produced using Prodia AI image generator and edited using Photoshop to fix gibberish words and erroneous features.*
+
 ### Running the App Locally
 1. Download the repository and open it in VSCode. 
 2. In the terminal, use the command "npm start" to launch the webapp. 
 3. Navigate to http://localhost:3000 to view the site. 
+
 
 
 ### Bugs/Errors
