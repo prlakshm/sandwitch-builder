@@ -214,12 +214,23 @@ h1 {
     font-size: 1.25rem;
 }
 
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+}
+
+.bottom .submit {
+    display: flex;
+    align-items: end;
+    padding-bottom: 0.5rem;
+}
+
 .build {
     position: relative;
-    padding: 0.5rem 1rem 0rem 1rem;
     display: flex;
-    justify-content: center;
-    width: 21.5rem;
+    width: 20.5rem;
 }
 
 .build .img-container {
@@ -236,7 +247,8 @@ h1 {
 
 .added-photo {
     position: absolute;
-    left: 11%; /* Adjust as needed */
+    left: 2%; /* Adjust as needed */
+    top: 2%;
     z-index: 1; /* Ensure it's on top of the base image */
     transition: opacity 0.5s, transform 0.5s;
     animation: fallInAnimation 0.5s ease-out;
@@ -264,7 +276,7 @@ h1 {
         justify-content: center;
         align-items: center;
         width: 65rem;
-        padding-left: 3rem;
+        padding-left: 2rem;
     }
     .right .top {
         padding-right: 2rem;
@@ -294,6 +306,8 @@ h1 {
     .right {
         width: 40rem;
         flex-direction: column;
+        padding-left: 5.5rem;
+        
     }
     .right .bottom {
         padding-left: 0rem;
