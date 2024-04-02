@@ -130,7 +130,7 @@ function App() {
               onChange={(e) => sortItemsByCategory(e.target.value)}
               style={{
                 backgroundColor:
-                  selectedSort === "Reset Sort" ? "#f9ecec" : "#ffbeae",
+                  selectedSort === "Reset Sort" ? "#fcf3f3" : "#ffbeae",
               }}
             >
               <option value="Reset Sort">Reset Sort</option>
@@ -145,7 +145,7 @@ function App() {
               onChange={(e) => filterItems(e.target.value)}
               style={{
                 backgroundColor:
-                  selectedFilter === "Reset Filter" ? "#f9ecec" : "#ffbeae",
+                  selectedFilter === "Reset Filter" ? "#fcf3f3" : "#ffbeae",
               }}
             >
               <option value="Reset Filter">Reset Filter</option>
