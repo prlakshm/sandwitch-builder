@@ -200,7 +200,7 @@ function App() {
                 {cart.length === 0 ? (
                   // If cart is empty, display a message
                   <div className="message">
-                    <p>Nothing here just yet!</p>
+                    <p style={{"fontSize":"1.07rem"}}>Nothing here just yet!</p>
                   </div>
                 ) : (
                   // If cart is not empty, render cart items and total price
